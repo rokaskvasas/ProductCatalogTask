@@ -1,5 +1,6 @@
 import helpers.CSVHelper;
 import models.Product;
+import org.apache.commons.lang3.tuple.Pair;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -15,9 +16,9 @@ public class App {
         CSVHelper.readCsv(allproducts,productsPath);}catch (IOException e){
             e.printStackTrace();
         }
-        ArrayList<Product> sortedARrayid = allproducts.stream().sorted(Comparator.comparing(Product::getId)).collect(Collectors.toCollection(ArrayList::new));
+        ArrayList<Product> sortedArray = allproducts.stream().sorted(Comparator.comparing(Product::getId)).collect(Collectors.toCollection(ArrayList::new));
 
-//        HashMap<Product,Pair<String,String>> catalog
+        HashMap<String, Pair<String,Product>> catalog = sortedArray.stream().filter(product -> )
 
     }
 }
