@@ -12,15 +12,19 @@ import java.util.stream.Stream;
 
 public class App {
     public static void main(String[] args) {
+
+        // Perskaitom CSV faila ir sukeliame i masyva.
         ArrayList<ProductGroup> allproducts = new ArrayList<>();
         String productsPath = ".\\src\\main\\java\\files\\Product_groups.csv";
         try{
         CSVHelper.readCsv(allproducts,productsPath);}catch (IOException e){
             e.printStackTrace();
         }
+
         buildCatalog(allproducts);
 
     }
+    // Surasti ir priskirti giminigus rysius(ParentId=Id) naudojant for cikla.
 
     public static ArrayList<ProductGroup> buildCatalog(ArrayList<ProductGroup> allproducts){
         for(ProductGroup g:  allproducts){
@@ -33,9 +37,7 @@ public class App {
       1 - Grupei rasti vaikus.
       2 - Turim patikrinti ar grupiu sarasas baigesi?
       3 - Jeigu baigesi - nieko nedarom, jeigu sarasas dar nesibaige - kvieciam grupei rasti vaikus.
-
      */
-
 
 
 }
