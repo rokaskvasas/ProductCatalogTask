@@ -48,7 +48,10 @@ public class App {
         List<Product> phoneDevices = filterSection(array,"8");
         List<Product> telefonuApratai = filterSection(array,"7");
         List<Product> fenai = filterSection(array,"9");
-        Pair<List<Product>,List<Product>> indaploves1 =Pair.of(buitinetechnika,indaploves2);
+        Pair<List<Product>,List<Product>> indaploves1 =groupingSection(buitinetechnika,indaploves2);
+//        Pair<List<Product>,List<Product>>
+        HashMap<String,List<Product>> indaploves3 = new HashMap<>();
+        indaploves3.put(parentIdToString(buitinetechnika,"Indaploves"),indaploves2);
 
 
         catalog.put(First,indaploves1);
@@ -57,6 +60,12 @@ public class App {
 
 public static List<Product> filterSection(ArrayList<Product> array,String parentID){
         return array.stream().filter(product -> product.getParentId().equals(parentID)).collect(Collectors.toList());
+}
+public static Pair<List<Product>,List<Product>> groupingSection(List<Product> first,List<Product> second){
+        return Pair.of(first, second);
+}
+public static String parentIdToString(List<Product> list1,String name){
+        return list1.stream().filter(product -> product.getParentId().equals(name)).findFirst().toString();
 }
 //    public static List<Product> arrayfactory(ArrayList<Product> array,String arrName, String identify){
 //    return List<Product> arrName= array.stream().filter(product -> product.getParentId().equals(identify)).collect(Collectors.toList()); }
