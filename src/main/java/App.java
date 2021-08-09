@@ -23,7 +23,22 @@ public class App {
 
         buildCatalog(allproducts);
 
+
+
+        printArray(allproducts);
+
+
     }
+
+
+
+//    public static void printArray(ArrayList<String> array, Integer whatElementToPrint){
+//        System.out.println(array.get(whatElementToPrint));
+//
+//        if(array.size() > whatElementToPrint){
+//            printArray(array, whatElementToPrint + 1);
+//        }
+//    }
     // Surasti ir priskirti giminigus rysius(ParentId=Id) naudojant for cikla.
 
     public static ArrayList<ProductGroup> buildCatalog(ArrayList<ProductGroup> allproducts){
@@ -33,11 +48,24 @@ public class App {
         return allproducts;
     }
 
+
+
+
     /*
       1 - Grupei rasti vaikus.
       2 - Turim patikrinti ar grupiu sarasas baigesi?
       3 - Jeigu baigesi - nieko nedarom, jeigu sarasas dar nesibaige - kvieciam grupei rasti vaikus.
      */
 
+    public static void printArray(ArrayList<ProductGroup> array){
+
+        for (ProductGroup pg: array) {
+            // atlikti pagrindini veikla su vaiku
+            if(pg.getChildren().size() > 0){
+                // jeigu vaike yra vaiku vaikai - tai spausdint vaiku vaikus.
+                printArray(pg.getChildren());
+            }
+        }
+    }
 
 }
