@@ -1,37 +1,37 @@
 Id;ParentId;Title
-21;33;Indaploves A.E.G
-20;33;Indaploves Bosh
-9;1;Fenai
-33;4;Indaploves
-16;32;Bevieles
-4;Null;Buitine technika
-22;31;Su ledo kamera
-5;3;Išmanieji telefonai
-34;4;Garu surinktuvai
-19;6;"45"" istrižaine"
-13;5;Apple
-18;6;"32"" istrižaine"
-26;10;Elektriniai
-6;2;Led ekranai
-28;32;Viršžemines
-14;8;Phillips
-12;5;Xiaomi
-7;3;Telefonu priedai
-2;Null;Televizoriai
-35;10;Rankiniai
-8;3;Telefonu aparatai
-16;7;Laisvuju ranku iranga
-22;31;Be ledo kameros
-3;Null;Telefonai
-30;9;Klasikiniai
-17;6;"50"" istrižaine"
-24;34;Naminiai
-31;4;Šaldituvai
-16;7;Pakrovejai
-29;33;Kitos indaploves
-27;9;Kelioniniai
-10;4;Kavos aparatai
-32;2;Antenos
 1;Null;Sveikata ir grožis
-25;34;Pramoniniai
+2;Null;Televizoriai
+3;Null;Telefonai
+4;Null;Buitin? technika
+5;3;Išmanieji telefonai
+6;2;Led ekranai
+7;3;Telefon? priedai
+8;3;Telefon? aparatai
+9;1;Fenai
+10;4;Kavos aparatai
 11;5;Samsung
+12;5;Xiaomi
+13;5;Apple
+14;8;Phillips
+15;32;Beviel?s
+16;7;Laisv?j? rank? ?ranga
+36;7;Pakrov?jai
+17;6;"50"" istrižain?"
+18;6;"32"" istrižain?"
+19;6;"45"" istrižain?"
+20;33;Indaplov?s Bosh
+21;33;Indaplov?s A.E.G
+22;31;Su ledo kamera
+23;31;Be ledo kameros
+24;34;Naminiai
+25;34;Pramoniniai
+26;10;Elektriniai
+27;9;Kelioniniai
+28;32;Viršžemin?s
+29;33;Kitos indaplov?s
+30;9;Klasikiniai
+31;4;Šaldituvai
+32;2;Antenos
+33;4;Indaplov?s
+34;4;Gar? surinktuvai
+35;10;Rankiniai
