@@ -1,8 +1,8 @@
 package models;
 
 public class Product {
-    private int id,parentId;
-    private String name;
+    private int id;
+    private String name,parentId;
 
 
     //region getters
@@ -10,7 +10,7 @@ public class Product {
         return id;
     }
 
-    public int getParentId() {
+    public String getParentId() {
         return parentId;
     }
 
@@ -19,7 +19,7 @@ public class Product {
     }
     //endregion
 
-    public Product(int id, int parentId, String name) {
+    public Product(int id, String parentId, String name) {
         this.id = id;
         this.parentId = parentId;
         this.name = name;

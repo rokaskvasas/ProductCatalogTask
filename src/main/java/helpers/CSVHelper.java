@@ -23,10 +23,7 @@ public class CSVHelper {
                     continue;
                 }
                 String[]productData = textLine.split(";");
-                if(productData[1].equals("Null")){
-                    productData[1]="0";
-                }
-                array.add(new Product(Integer.parseInt(productData[0]),Integer.parseInt(productData[1]),productData[2]));
+                array.add(new Product(Integer.parseInt(productData[0]),productData[1],productData[2]));
             }
         } catch (IOException e) {
             e.printStackTrace();
